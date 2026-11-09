@@ -1,0 +1,5 @@
+# Template: add one VPN user. Edit the three values, then paste into the router terminal.
+:local pubkey "<CLIENT_PUBLIC_KEY>"
+:local addr "10.98.0.11/32"
+:local who "Name - admin"
+/interface wireguard peers add interface=wg-home public-key=$pubkey allowed-address=$addr comment=$who

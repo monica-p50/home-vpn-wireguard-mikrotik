@@ -1,0 +1,8 @@
+*.key
+*.conf
+!*.conf.example
+*.rsc
+!*.rsc.example
+*.backup
+export*.rsc
+.env

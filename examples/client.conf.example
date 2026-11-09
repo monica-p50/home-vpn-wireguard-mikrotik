@@ -1,0 +1,10 @@
+# Example only. Replace every <...> placeholder. Never commit a real file like this.
+[Interface]
+PrivateKey = <CLIENT_PRIVATE_KEY>          # made on the device, stays on the device
+Address = 10.98.0.2/32                       # the address the admin gave you
+
+[Peer]
+PublicKey = <ROUTER_PUBLIC_KEY>              # public key of wg-home on the router
+Endpoint = <OFFICE_DDNS_NAME_OR_IP>:51820
+AllowedIPs = 10.98.0.0/24, 192.168.88.0/24   # split tunnel: office only
+PersistentKeepalive = 25
